@@ -855,12 +855,7 @@ function AdminPage() {
   const [showAddForm, setShowAddForm] = useState(false);
   const [newMed, setNewMed] = useState({ name:"", brand:"", category:"Pain Relief", tags:[], stock:"available" });
 
-  const mockOrders = [
-    { id:"ORD-001", shop:"Gupta Medical", city:"Delhi", items:["Dolo 650 x5","Azithromycin x10"], time:"10 min ago", status:"new" },
-    { id:"ORD-002", shop:"Sharma Pharmacy", city:"Noida", items:["Pantoprazole x20"], time:"28 min ago", status:"processing" },
-    { id:"ORD-003", shop:"Raj Medical", city:"Gurgaon", items:["Vitamin D3 x15","Metformin x30"], time:"1 hr ago", status:"delivered" },
-    { id:"ORD-004", shop:"City Pharma", city:"Delhi", items:["Cetirizine x50","Dolo 650 x25"], time:"2 hr ago", status:"delivered" },
-  ];
+  const mockOrders = [];
 
   const STATUS_COLOR = { new:`${COLORS.blue}`, processing:"#D97706", delivered:COLORS.green };
 
